@@ -2,35 +2,38 @@
 <html lang="en">
 
 <head>
-    <title>Purple Buzz - About Page</title>
+    <title>Huy Law Blog</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="apple-touch-icon" href="{{ url_for('static',filename='img/apple-icon.png') }}">
     <link rel="shortcut icon" type="image/x-icon" href="{{ url_for('static',filename='favicon.ico') }}">
     <!-- Load Require CSS -->
-    <link href="{{ url_for('static',filename='static/css/bootstrap.min.css') }}" rel="stylesheet">
+    <link href="{{ url_for('static',filename='css/bootstrap.min.css') }}" rel="stylesheet">
     <!-- Font CSS -->
-    <link href="{{ url_for('static',filename='static/css/boxicon.min.css') }}" rel="stylesheet">
+    <link href="{{ url_for('static',filename='css/boxicon.min.css') }}" rel="stylesheet">
     <!-- Load Tempalte CSS -->
-    <link rel="stylesheet" href="{{ url_for('static',filename='static/css/main.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static',filename='css/main.css') }}">
     <!-- Custom CSS -->
-    <link rel="stylesheet" href="{{ url_for('static',filename='static/css/custom.css') }}">
-<!--
-    
-TemplateMo 561 Purple Buzz
-
-https://templatemo.com/tm-561-purple-buzz
-
--->
+    <link rel="stylesheet" href="{{ url_for('static',filename='css/custom.css') }}">
+    <style>
+         #image_aboutus {
+    background-image: url(https://images.hdqwalls.com/download/small-memory-8k-2a-1920x1080.jpg);
+    background-size: cover;
+    width: 100%;
+    height: 50%;
+    padding-bottom: 80px;
+ }
+    </style>
 </head>
 
 <body>
     <!-- Header -->
     <nav id="main_nav" class="navbar navbar-expand-lg navbar-light bg-white shadow">
         <div class="container d-flex justify-content-between align-items-center">
-            <a class="navbar-brand h1" href="index.html">
-                <i class='bx bx-buildings bx-sm text-dark'></i>
-                <span class="text-dark h4">Purple</span> <span class="text-primary h4">Buzz</span>
+            <a style="margin: 0;width: 200px;padding-right: 0;" class="navbar-brand h1" href="{{ url_for('view.about_page') }}">
+                <span class="text-dark h4">
+                    <img src="../static/img/logo_ML_black.svg" style="width: 30%" alt="logo">&nbsp;
+                    Huy</span> <span class="text-primary h4">Law</span>
             </a>
             <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-toggler-success" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -40,19 +43,19 @@ https://templatemo.com/tm-561-purple-buzz
                 <div class="flex-fill mx-xl-5 mb-2">
                     <ul class="nav navbar-nav d-flex justify-content-between mx-xl-5 text-center text-dark">
                         <li class="nav-item">
-                            <a class="nav-link btn-outline-primary rounded-pill px-3" href="index.html">Home</a>
+                            <a class="nav-link btn-outline-primary rounded-pill px-3" href="{{ url_for('view.home_page') }}">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link btn-outline-primary rounded-pill px-3" href="about.html">About</a>
+                            <a class="nav-link btn-outline-primary rounded-pill px-3" href="{{ url_for('view.about_page') }}">About</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link btn-outline-primary rounded-pill px-3" href="work.html">Work</a>
+                            <a class="nav-link btn-outline-primary rounded-pill px-3" href="{{ url_for('view.work_page') }}">Work</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link btn-outline-primary rounded-pill px-3" href="pricing.html">Pricing</a>
+                            <a class="nav-link btn-outline-primary rounded-pill px-3" href="{{ url_for('view.pricing_page') }}">Pricing</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link btn-outline-primary rounded-pill px-3" href="contact.html">Contact</a>
+                            <a class="nav-link btn-outline-primary rounded-pill px-3" href="{{ url_for('view.contact_page') }}">Contact</a>
                         </li>
                     </ul>
                 </div>
@@ -68,17 +71,15 @@ https://templatemo.com/tm-561-purple-buzz
 
 
     <!-- Start Banner Hero -->
-    <section class="bg-light w-100">
+    <section class="bg-light w-100" id="image_aboutus">
         <div class="container">
             <div class="row d-flex align-items-center py-5">
                 <div class="col-lg-6 text-start">
-                    <h1 class="h2 py-5 text-primary typo-space-line">About Us</h1>
-                    <p class="light-300">
-                        Vector illustration credit goes to <a rel="nofollow" href="http://freepik.com/" target="_blank">FreePik</a> website. Purple Buzz is provided by TemplateMo. Lorem ipsum dolor sit amet, consectetur.
+                    <!-- <h1 class="h2 py-5 text-primary typo-space-line">About Us</h1> -->
+                    <h1 style="color: white;font-size: 50px;position: absolute;top: 220px;margin-bottom: 0;">About Us</h1>
+                    <p>
+                        <!-- <a rel="nofollow" href="http://freepik.com/" target="_blank">FreePik</a> -->
                     </p>
-                </div>
-                <div class="col-lg-6">
-                    <img src="../static/img/banner-img-02.svg">
                 </div>
             </div>
         </div>
@@ -93,31 +94,58 @@ https://templatemo.com/tm-561-purple-buzz
             <div class="col-lg-3">
                 <h2 class="h2 py-5 typo-space-line">Our Team</h2>
                 <p class="text-muted light-300">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                    sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                    Nhóm gồm những thành viên đại diện ưu tú, cùng nhau đóng góp và xây dựng nên cộng đồng vững mạnh.
                 </p>
             </div>
 
             <div class="col-lg-9 row">
                 <div class="team-member col-md-4">
-                    <img class="team-member-img img-fluid rounded-circle p-4" src="../static/img/team-01.jpg" alt="Card image">
+                    <img class="team-member-img img-fluid rounded-circle p-4" src="../static/img/HatCat.png" alt="Card image">
                     <ul class="team-member-caption list-unstyled text-center pt-4 text-muted light-300">
-                        <li>John Doe</li>
-                        <li>Business Development</li>
+                        <li>Toàn Trần</li>
+                        <li>Hạt Cát Giữa Sa Mạc</li>
                     </ul>
                 </div>
                 <div class="team-member col-md-4">
-                    <img class="team-member-img img-fluid rounded-circle p-4" src="../static/img/team-02.jpg" alt="Card image">
+                    <img class="team-member-img img-fluid rounded-circle p-4" src="../static/img/SisNhi2.jpg" alt="Card image">
                     <ul class="team-member-caption list-unstyled text-center pt-4 text-muted light-300">
-                        <li>Jane Doe</li>
-                        <li>Media Development</li>
+                        <li>Nhi Nguyễn</li>
+                        <li>Bá Chủ Thế Giới</li>
                     </ul>
                 </div>
                 <div class="team-member col-md-4">
-                    <img class="team-member-img img-fluid rounded-circle p-4" src="../static/img/team-03.jpg" alt="Card image">
+                    <img class="team-member-img img-fluid rounded-circle p-4" src="../static/img/AnhTuan.png" alt="Card image">
                     <ul class="team-member-caption list-unstyled text-center pt-4 text-muted light-300">
-                        <li>Sam</li>
-                        <li>Developer</li>
+                        <li>Hoàng Tuấn</li>
+                        <li>Đao To Búa Lớn</li>
+                    </ul>
+                </div>
+                <div class="team-member col-md-4">
+                    <img class="team-member-img img-fluid rounded-circle p-4" src="../static/img/PhongNoJoke.jpg" alt="Card image">
+                    <ul class="team-member-caption list-unstyled text-center pt-4 text-muted light-300">
+                        <li>Thanh Phong</li>
+                        <li>Phong Jocker</li>
+                    </ul>
+                </div>
+                <div class="team-member col-md-4">
+                    <img class="team-member-img img-fluid rounded-circle p-4" src="../static/img/Moclaw.png" alt="Card image">
+                    <ul class="team-member-caption list-unstyled text-center pt-4 text-muted light-300">
+                        <li>Mộc Lâm ( Moclaw )</li>
+                        <li>Ngư Dân Chung Thủy</li>
+                    </ul>
+                </div>
+                <div class="team-member col-md-4">
+                    <img class="team-member-img img-fluid rounded-circle p-4" src="../static/img/KhoiWibu.png" alt="Card image">
+                    <ul class="team-member-caption list-unstyled text-center pt-4 text-muted light-300">
+                        <li>Khôi Lâm</li>
+                        <li>Phát Ngôn Tầm Cỡ</li>
+                    </ul>
+                </div>
+                <div class="team-member col-md-4">
+                    <img class="team-member-img img-fluid rounded-circle p-4" src="../static/img/BanDuy.png" alt="Card image">
+                    <ul class="team-member-caption list-unstyled text-center pt-4 text-muted light-300">
+                        <li>Duy Phạm</li>
+                        <li>Duy Môn Du</li>
                     </ul>
                 </div>
             </div>
@@ -211,12 +239,12 @@ https://templatemo.com/tm-561-purple-buzz
         <div class="container my-4">
             <div class="row">
                 <div class="banner-img col-lg-5">
-                    <img src="../static/img/work.svg" class="rounded img-fluid" alt="">
+                    <img src="../img/work.svg" class="rounded img-fluid" alt="">
                 </div>
                 <div class="banner-content col-lg-7 align-self-end">
-                    <h2 class="h2 pb-3">Why you choose us?</h2>
-                    <p class="text-muted pb-5 light-300">
-                    You are allowed to download and use this Purple Buzz template for your websites. You are <strong>not allowed</strong> to re-distribute this template ZIP file on other template websites. It is quite easy to simply copy and repost the ZIP file on any <a rel="nofollow" href="https://www.google.com/search?q=free+css" target="_blank">Free CSS collection</a> websites.</p>
+                    <h2 class="h2 pb-3">Tại sao lại chọn chúng tôi?</h2>
+                    <p class="text-muted pb-5 light-300"><br>
+                    Bởi vì bạn có tiềm năng.
                 </div>
             </div>
         </div>
@@ -270,13 +298,13 @@ https://templatemo.com/tm-561-purple-buzz
         <div class="container">
             <div class="row">
                 <div class="col-lg-6 mx-auto my-4 p-3">
-                    <form action="#" method="get"><h1 class="h2 text-center">Stay up to date with us</h1>
+                    <form action="#" method="get"><h1 class="h2 text-center">Bạn muốn tham gia với chúng tôi?</h1>
                     <div class="input-group py-3">
                     
                         <input name="email" type="text" class="form-control form-control-lg rounded-pill rounded-end" id="email" placeholder="Your Email" aria-label="Your Email">
-                        <button class="btn btn-secondary text-white btn-lg rounded-pill rounded-start px-lg-4" type="submit">Subsribe</button>
+                        <button class="btn btn-secondary text-white btn-lg rounded-pill rounded-start px-lg-4" type="submit">Gửi</button>
                     </div>
-                    <p class="text-center light-300">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt labore et dolore magna aliqua.</p>
+                    <p class="text-center light-300">Chúng tôi sẽ liên hệ với bạn qua email trên, vì thế hãy sử dụng email làm việc của bạn.</p>
                     </form>
                 </div>
             </div>
@@ -291,9 +319,9 @@ https://templatemo.com/tm-561-purple-buzz
             <div class="row py-4">
 
                 <div class="col-lg-3 col-12 align-left">
-                    <a class="navbar-brand" href="index.html">
+                    <a class="navbar-brand" href="{{ url_for('view.home_page') }}">
                         <i class='bx bx-buildings bx-sm text-light'></i>
-                        <span class="text-light h5">Purple</span> <span class="text-light h5 semi-bold-600">Buzz</span>
+                        <span class="text-light h5">Huy</span> <span class="text-light h5 semi-bold-600">Law</span>
                     </a>
                     <p class="text-light my-lg-4 my-2">
                         Lorem ipsum dolor sit amet, consectetur adipisicing elit,
@@ -332,19 +360,19 @@ https://templatemo.com/tm-561-purple-buzz
                     <h2 class="h4 pb-lg-3 text-light light-300">Our Company</h2>
                         <ul class="list-unstyled text-light light-300">
                             <li class="pb-2">
-                                <i class='bx-fw bx bxs-chevron-right bx-xs'></i><a class="text-decoration-none text-light" href="index.html">Home</a>
+                                <i class='bx-fw bx bxs-chevron-right bx-xs'></i><a class="text-decoration-none text-light" href="{{ url_for('view.home_page') }}">Home</a>
                             </li>
                             <li class="pb-2">
-                                <i class='bx-fw bx bxs-chevron-right bx-xs'></i><a class="text-decoration-none text-light py-1" href="about.html">About Us</a>
+                                <i class='bx-fw bx bxs-chevron-right bx-xs'></i><a class="text-decoration-none text-light py-1" href="{{ url_for('view.about_page') }}">About Us</a>
                             </li>
                             <li class="pb-2">
-                                <i class='bx-fw bx bxs-chevron-right bx-xs'></i><a class="text-decoration-none text-light py-1" href="work.html">Work</a>
+                                <i class='bx-fw bx bxs-chevron-right bx-xs'></i><a class="text-decoration-none text-light py-1" href="{{ url_for('view.work_page') }}">Work</a>
                             </li>
                             <li class="pb-2">
-                                <i class='bx-fw bx bxs-chevron-right bx-xs'></i></i><a class="text-decoration-none text-light py-1" href="pricing.html">Price</a>
+                                <i class='bx-fw bx bxs-chevron-right bx-xs'></i></i><a class="text-decoration-none text-light py-1" href="{{ url_for('view.pricing_page') }}">Price</a>
                             </li>
                             <li class="pb-2">
-                                <i class='bx-fw bx bxs-chevron-right bx-xs'></i><a class="text-decoration-none text-light py-1" href="contact.html">Contact</a>
+                                <i class='bx-fw bx bxs-chevron-right bx-xs'></i><a class="text-decoration-none text-light py-1" href="{{ url_for('view.contact_page') }}">Contact</a>
                             </li>
                         </ul>
                 </div>
@@ -374,13 +402,14 @@ https://templatemo.com/tm-561-purple-buzz
                 </div>
 
                 <div class="col-lg-3 col-md-4 my-sm-0 mt-4">
-                    <h2 class="h4 pb-lg-3 text-light light-300">For Client</h2>
+                    <h2 class="h4 pb-lg-3 text-light light-300">Contact Us</h2>
                     <ul class="list-unstyled text-light light-300">
                         <li class="pb-2">
-                            <i class='bx-fw bx bx-phone bx-xs'></i><a class="text-decoration-none text-light py-1" href="tel:010-020-0340">010-020-0340</a>
+                            <i class='bx-fw bx bx-phone bx-xs'></i><a class="text-decoration-none text-light py-1" href="tel:#">0963XXXXXX</a>
                         </li>
                         <li class="pb-2">
-                            <i class='bx-fw bx bx-mail-send bx-xs'></i><a class="text-decoration-none text-light py-1" href="mailto:info@company.com">info@company.com</a>
+                            <i class='bx-fw bx bx-mail-send bx-xs'></i><a class="text-decoration-none text-light py-1" href="mailto:huy.207ct40299@vanlanguni.vn">huy.207ct40299@vanlanguni.vn</a><br>
+                            <i class='bx-fw bx bx-mail-send bx-xs'></i><a class="text-decoration-none text-light py-1" href="mailto:cong.207ct27643@vanlanguni.vn">cong.207ct27643@vanlanguni.vn</a>
                         </li>
                     </ul>
                 </div>
@@ -393,12 +422,12 @@ https://templatemo.com/tm-561-purple-buzz
                 <div class="row pt-2">
                     <div class="col-lg-6 col-sm-12">
                         <p class="text-lg-start text-center text-light light-300">
-                            © Copyright 2021 Purple Buzz Company. All Rights Reserved.
+                            © Copyright 2021 Nguyen Thanh Cong(Moclaw) & Do Huy. All Rights Reserved.
                         </p>
                     </div>
                     <div class="col-lg-6 col-sm-12">
                         <p class="text-lg-end text-center text-light light-300">
-                            Designed by <a rel="sponsored" class="text-decoration-none text-light" href="https://templatemo.com/" target="_blank"><strong>TemplateMo</strong></a>
+                            Make by <a rel="sponsored" class="text-decoration-none text-light" href="#" target="_blank"><strong>Huy Law</strong></a>
                         </p>
                     </div>
                 </div>
@@ -410,11 +439,11 @@ https://templatemo.com/tm-561-purple-buzz
 
 
     <!-- Bootstrap -->
-    <script src="../static/js/bootstrap.bundle.min.js"></script>
+    <script src="../js/bootstrap.bundle.min.js"></script>
     <!-- Templatemo -->
-    <script src="../static/js/templatemo.js"></script>
+    <script src="../js/templatemo.js"></script>
     <!-- Custom -->
-    <script src="../static/js/custom.js"></script>
+    <script src="../js/custom.js"></script>
 
 </body>
 
