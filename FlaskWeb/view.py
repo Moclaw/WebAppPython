@@ -19,9 +19,9 @@ def about_page():
 def work_single_page():
     return render_template('work-single.html')
 
-@views.route('/work/pricing')
-def pricing_page():
-    return render_template('pricing.html')
+@views.route('/work/price')
+def price_page():
+    return render_template('price.html')
 
 @views.route('/work/contact')
 def contact_page():

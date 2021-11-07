@@ -1,6 +1,10 @@
 {% extends "index.html" %}
 {% block title %}Huy Law Blog{% endblock %}
 {% block content %}
+<link rel="stylesheet" href="{{ url_for('static',filename='css/bootstrap.css') }}">
+<link rel="stylesheet" href="{{ url_for('static',filename='css/bootstrap.min.css') }}">
+<link rel="stylesheet" href="{{ url_for('static',filename='css/boxicon.min.css') }}">
+<link rel="stylesheet" href="{{ url_for('static',filename='css/main.css') }}">
 <div class="banner-wrapper bg-light">
     <div id="index_banner" class="banner-vertical-center-index container-fluid pt-5">
         <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
@@ -151,24 +155,60 @@
                     <div class="service-work-content text-left text-light">
                         <span class="btn btn-outline-light rounded-pill mb-lg-3 px-lg-4 light-300">Đăng ký</span>
                         <p class="card-text">Khóa học 4 triệu.<br>
-                                             Nhập môn và nắm vững cơ bản về bộ môn cơ sở dữ liệu.</p>
+                                             Nắm vững cơ bản về bộ môn cơ sở dữ liệu.</p>
                     </div>
                 </div>
             </a>
         </div>
-        <div class="col-xl-3 col-md-4 col-sm-6 project networksecurity">
+        <div class="col-xl-3 col-md-4 col-sm-6 project networksecurity"> <!--webstiteDev-->
+            <a href="#" class="service-work card border-0 text-white shadow-sm overflow-hidden mx-5 m-sm-0">
+                <img class="card-img" src="../static/img/KhoiWibu.png" alt="Card image">
+                <div class="service-work-vertical card-img-overlay d-flex align-items-end">
+                    <div class="service-work-content text-left text-light">
+                        <span class="btn btn-outline-light rounded-pill mb-lg-3 px-lg-4 light-300">Đăng ký</span>
+                        <p class="card-text">Khóa học 100 triệu.<br>
+                                             3 bước làm giàu.</p>
+                    </div>
+                </div>
+            </a>
+        </div>
+        <div class="col-xl-3 col-md-4 col-sm-6 project webstiteDev networksecurity">
             <a href="#" class="service-work card border-0 text-white shadow-sm overflow-hidden mx-5 m-sm-0">
                 <img class="card-img" src="../static/img/AnhTuan.png" alt="Card image">
                 <div class="service-work-vertical card-img-overlay d-flex align-items-end">
                     <div class="service-work-content text-left text-light">
                         <span class="btn btn-outline-light rounded-pill mb-lg-3 px-lg-4 light-300">Đăng ký</span>
                         <p class="card-text">Khóa học 8 triệu.<br>
-                                             Đạo đức nghề nghiệp.</p>
+                                             Vận dụng đạo đức trong nghề nghiệp.</p>
                     </div>
                 </div>
             </a>
         </div>
-        <div class="col-xl-3 col-md-4 col-sm-6 project webstiteDev datascience">
+        <div class="col-xl-3 col-md-4 col-sm-6 project webstiteDev ">
+            <a href="#" class="service-work card border-0 text-white shadow-sm overflow-hidden mx-5 m-sm-0">
+                <img class="card-img" src="../static/img/Moclaw.png" alt="Card image">
+                <div class="service-work-vertical card-img-overlay d-flex align-items-end">
+                    <div class="service-work-content text-left text-light">
+                        <span class="btn btn-outline-light rounded-pill mb-lg-3 px-lg-4 light-300">Đăng Ký</span>
+                        <p class="card-text">Khóa học 17 triệu.<br>
+                                            7 ngày cưa cây.</p>
+                    </div>
+                </div>
+            </a>
+        </div>
+        <div class="col-xl-3 col-md-4 col-sm-6 project software">
+            <a href="#" class="service-work card border-0 text-white shadow-sm overflow-hidden mx-5 m-sm-0">
+                <img class="card-img" src="../static/img/SisNhi2.jpg" alt="Card image">
+                <div class="service-work-vertical card-img-overlay d-flex align-items-end">
+                    <div class="service-work-content text-left text-light">
+                        <span class="btn btn-outline-light rounded-pill mb-lg-3 px-lg-4 light-300">Đăng ký</span>
+                        <p class="card-text">Khóa học 15 triệu <br>
+                                             Thay gì dễ như thay áo ?</p>
+                    </div>
+                </div>
+            </a>
+        </div>
+        <div class="col-xl-3 col-md-4 col-sm-6 project datascience">
             <a href="#" class="service-work card border-0 text-white shadow-sm overflow-hidden mx-5 m-sm-0">
                 <img class="card-img" src="../static/img/AnhToan.jpg" alt="Card image">
                 <div class="service-work-vertical card-img-overlay d-flex align-items-end">
@@ -180,7 +220,19 @@
                 </div>
             </a>
         </div>
-        <div class="col-xl-3 col-md-4 col-sm-6 project webstiteDev datascience">
+        <div class="col-xl-3 col-md-4 col-sm-6 project webstiteDev">
+            <a href="#" class="service-work card border-0 text-white shadow-sm overflow-hidden mx-5 m-sm-0">
+                <img class="card-img" src="../static/img/BanDuy.png" alt="Card image">
+                <div class="service-work-vertical card-img-overlay d-flex align-items-end">
+                    <div class="service-work-content text-left text-light">
+                        <span class="btn btn-outline-light rounded-pill mb-lg-3 px-lg-4 light-300">Đăng ký</span>
+                        <p class="card-text">Khóa học 100 triệu.<br>
+                                             Thủ thuật đọc lệnh chuyên nghiệp.</p>
+                    </div>
+                </div>
+            </a>
+        </div>
+        <div class="col-xl-3 col-md-4 col-sm-6 project datascience">
             <a href="#" class="service-work card border-0 text-white shadow-sm overflow-hidden mx-5 m-sm-0">
                 <img class="card-img" src="../static/img/AnhToan.jpg" alt="Card image">
                 <div class="service-work-vertical card-img-overlay d-flex align-items-end">
@@ -192,7 +244,7 @@
                 </div>
             </a>
         </div>
-        <div class="col-xl-3 col-md-4 col-sm-6 project networksecurity">
+        <div class="col-xl-3 col-md-4 col-sm-6 project webstiteDev networksecurity">
             <a href="#" class="service-work card border-0 text-white shadow-sm overflow-hidden mx-5 m-sm-0">
                 <img class="card-img" src="../static/img/AnhTuan.png" alt="Card image">
                 <div class="service-work-vertical card-img-overlay d-flex align-items-end">
@@ -204,13 +256,26 @@
                 </div>
             </a>
         </div>
-        <div class="col-xl-3 col-md-4 col-sm-6 project networksecurity">
+        <div class="col-xl-3 col-md-4 col-sm-6 project software">
             <a href="#" class="service-work card border-0 text-white shadow-sm overflow-hidden mx-5 m-sm-0">
-                <img class="card-img" src="../static/img/services-07.jpg" alt="Card image">
+                <img class="card-img" src="../static/img/PhongNoJoke.jpg" alt="Card image">
                 <div class="service-work-vertical card-img-overlay d-flex align-items-end">
                     <div class="service-work-content text-left text-light">
-                        <span class="btn btn-outline-light rounded-pill mb-lg-3 px-lg-4 light-300">Business</span>
-                        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing</p>
+                        <span class="btn btn-outline-light rounded-pill mb-lg-3 px-lg-4 light-300">Đăng Ký</span>
+                        <p class="card-text">Khóa học 20 triệu.<br>
+                                             Vỏ ốc có vị gì ?</p>
+                    </div>
+                </div>
+            </a>
+        </div>
+        <div class="col-xl-3 col-md-4 col-sm-6 project software">
+            <a href="#" class="service-work card border-0 text-white shadow-sm overflow-hidden mx-5 m-sm-0">
+                <img class="card-img" src="../static/img/SisNhi2.jpg" alt="Card image">
+                <div class="service-work-vertical card-img-overlay d-flex align-items-end">
+                    <div class="service-work-content text-left text-light">
+                        <span class="btn btn-outline-light rounded-pill mb-lg-3 px-lg-4 light-300">Đăng ký</span>
+                        <p class="card-text">Khóa học 5 triệu <br>
+                                             Áp dụng Glucozo vào chiến lược kinh doanh.</p>
                     </div>
                 </div>
             </a>
@@ -234,7 +299,7 @@
                     <div class="service-work-content text-left text-light">
                         <span class="btn btn-outline-light rounded-pill mb-lg-3 px-lg-4 light-300">Đăng Ký</span>
                         <p class="card-text">Khóa học 10 triệu.<br>
-                                             Học cách quên em.</p>
+                                             Cách để quên người.</p>
                     </div>
                 </div>
             </a>
