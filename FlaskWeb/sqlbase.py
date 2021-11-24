@@ -4,6 +4,7 @@ conn = sqlite3.connect('WebAppPython/account.db')
 
 cur = conn.cursor()
 
+
 def add_data(arg):
     email = arg['email']
     name = arg['lastName'] + ' ' + arg['firstName']
@@ -11,8 +12,10 @@ def add_data(arg):
 
     conn.execute(f"INSERT INTO user VALUES ('{name}','{password}','{email}'')")
 
+
 def delete_data():
     conn.execute("DELETE FROM user WHERE name = 'Do HUY'")
+
 
 delete_data()
 

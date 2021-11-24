@@ -1,6 +1,6 @@
-from flask import Blueprint, render_template, request, flash
 import re
 import sqlite3
+from flask import Blueprint, render_template, request, flash
 
 auth = Blueprint('auth', __name__)
 
@@ -10,25 +10,26 @@ def login_page():
     if request.method == 'POST':
         email = request.form.get('email')
         password = request.form.get('password')
-        conn = sqlite3.connect('WebAppPython/account.db')
+        conn = sqlite3.connect('account.db')
         cur = conn.cursor()
         check = conn.execute(f"SELECT * FROM user WHERE email = '{email}' AND password = '{password}' ")
-        
+
         if check.fetchall():
-            flash('Login success !',category='success')
+            flash('Login success !', category='success')
         else:
-            flash('Login fail !',category='error')
+            flash('Login fail !', category='error')
         print(check)
         conn.commit()
         conn.close()
     return render_template('login.html')
+
 
 @auth.route("/logout")
 def logout_page():
     return "<p>logout</p>"
 
 
-@auth.route("/regist", methods=['GET', 'POST'])
+@auth.route("/register", methods=['GET', 'POST'])
 def regist_page():
     regex = re.compile('[@_!#$%^&*()<>?/|}{~:]')
     if request.method == 'POST':
@@ -42,11 +43,11 @@ def regist_page():
             flash('This is not mail, try again!', category='error')
         elif len(first_name) < 2:
             flash('No one  have a First Name have 2 character, Bro get some char pls!!', category='error')
-            if re.search("[0-9]",first_name):
+            if re.search("[0-9]", first_name):
                 flash('Serious? Name have number??', category='error')
         elif len(last_name) < 2:
             flash('No one  have a Last Name have 2 character, Bro get some char pls!!', category='error')
-            if re.search("[0-9]",first_name):
+            if re.search("[0-9]", first_name):
                 flash('Serious? Name have number??', category='error')
         elif password != password_confirm:
             flash('Password don\'t match', category='error')
@@ -59,19 +60,19 @@ def regist_page():
         else:
             flash('Account created!', category='success')
 
-        conn = sqlite3.connect('WebAppPython/account.db')
-        cur = conn.cursor()
-        arg = request.form
-        email = arg['email']
-        name = arg['lastName'] + ' ' + arg['firstName']
-        password = arg['password1']
-        check = conn.execute(f"SELECT * FROM user WHERE email = '{email}'")
-        result= check.fetchall()
-        if result == []:
-            conn.execute(f"INSERT INTO user VALUES ('{name}','{password}','{email}')")
-        else:
-            flash('Account already exists',category='error')
-        conn.commit()
-        conn.close()
-        
-    return render_template('regist.html')
+            conn = sqlite3.connect('account.db')
+            cur = conn.cursor()
+            arg = request.form
+            email = arg['email']
+            name = arg['lastName'] + ' ' + arg['firstName']
+            password = arg['password1']
+            check = conn.execute(f"SELECT * FROM user WHERE email = '{email}'")
+            result = check.fetchall()
+            if result == []:
+                conn.execute(f"INSERT INTO user VALUES ('{name}','{password}','{email}')")
+            else:
+                flash('Account already exists', category='error')
+            conn.commit()
+            conn.close()
+
+    return render_template('login.html')
