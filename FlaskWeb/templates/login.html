@@ -1,0 +1,257 @@
+{% extends 'index.html' %}
+{% block title %}<title>Login</title>{% endblock %}
+{% block style_local %}
+    {{ super() }}
+    <style>
+        .height-100 {
+            height: 500px
+        }
+
+        .sidebar {
+            position: relative;
+            overflow: hidden
+        }
+
+        .chart-design {
+            list-style: none
+        }
+
+        .chart-design li:nth-child(1) {
+            position: absolute;
+            top: 10px;
+            height: 100px;
+            width: 100px;
+            background-color: #b7c2d4;
+            border-radius: 100% 0% 0% 100% / 0% 56% 44% 100%;
+            opacity: 0.4
+        }
+
+        .chart-design li:nth-child(2) {
+            position: absolute;
+            top: 30px;
+            right: 20px;
+            transform: rotate(-10deg);
+            height: 70px;
+            width: 70px;
+            background-color: #000;
+            border-radius: 100% 0% 0% 100% / 0% 56% 44% 100%;
+            opacity: 0.4
+        }
+
+        .chart-design li:nth-child(3) {
+            position: absolute;
+            bottom: 0px;
+            left: 200px;
+            transform: rotate(-10deg);
+            height: 150px;
+            width: 150px;
+            background-color: #000;
+            border-radius: 100% 0% 0% 100% / 0% 56% 44% 100%;
+            opacity: 0.4
+        }
+
+        .chart-design li:nth-child(4) {
+            position: absolute;
+            bottom: 0px;
+            left: 10px;
+            transform: rotate(-10deg);
+            height: 150px;
+            width: 150px;
+            background-color: #000;
+            border-radius: 50%;
+            opacity: 0.4
+        }
+
+        .chart-design li:nth-child(5) {
+            position: absolute;
+            bottom: 0px;
+            right: 10px;
+            transform: rotate(-10deg);
+            height: 70px;
+            width: 70px;
+            background-color: #000;
+            border-radius: 50%;
+            opacity: 0.7
+        }
+
+        .chart-design li:nth-child(6) {
+            position: absolute;
+            top: 120px;
+            left: 40%;
+            transform: rotate(-10deg);
+            height: 200px;
+            width: 200px;
+            background-color: #000;
+            border-radius: 50%;
+            opacity: 0.2
+        }
+
+        .form-data {
+            width: 100%;
+            margin-bottom: 10px
+        }
+
+        .main-heading {
+            font-size: 30px
+        }
+
+        .form-data label {
+            font-size: 13px;
+            margin-left: 2px
+        }
+
+        .form-data input {
+            height: 50px;
+            border: 2px solid #eee;
+            transition: all 1s;
+            border-radius: 5px
+        }
+
+        .form-data input:focus {
+            outline: none;
+            border: 2px solid #000;
+            box-shadow: none
+        }
+
+        .social-list {
+            list-style: none;
+            display: flex;
+            justify-content: end;
+        }
+
+        .social-list li a {
+            margin: 10px;
+            width: 40px;
+            height: 40px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 10px;
+            transition: all 0.5s;
+            cursor: pointer;
+            color: #fff
+        }
+
+        .forgot-text {
+            color: red
+        }
+
+        .social-list li:nth-child(1) {
+            background-color: dodgerblue
+        }
+
+        .social-list li:nth-child(2) {
+            background-color: #9acfea;
+        }
+
+        .social-list li:nth-child(3) {
+            background-color: #1828fe
+        }
+
+        .signin-btn .btn {
+            width: 100%;
+            height: 46px;
+            margin-top: 10px
+        }
+
+        footer {
+            position: relative;
+            will-change: top, left;
+            left: 14px;
+            top: 1080px;
+        }
+    </style>
+{% endblock %}
+{% block login %}
+    <div class="container">
+        <div class="row g-0 mt-5 mb-5 height-100">
+            <div class="col-md-6">
+                <div class="bg-dark p-4 h-100 sidebar">
+                    <ul class="chart-design">
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="bg-white p-4 h-100">
+                    <form method="post">
+                        <div class="p-3 d-flex justify-content-center flex-column align-items-center"><span
+                                class="main-heading">Sign In To We Blog</span>
+
+
+                            <div class="form-data"><label for="email">Email</label> <input type="text"
+                                                                                           name="email"
+                                                                                           placeholder="Enter email"
+                                                                                           class="form-control w-100"/>
+                            </div>
+                            <div class="form-data"><label for="password">Password</label> <input type="password"
+                                                                                                 name="password"
+                                                                                                 placeholder="Enter password"
+                                                                                                 class="form-control w-100"/>
+                            </div>
+                            <div class="d-flex justify-content-between w-100 align-items-center">
+                                <div class="form-check"><input class="form-check-input" type="checkbox" value="false"
+                                                               id="flexCheckDefault"> <label class="form-check-label"
+                                                                                             for="flexCheckDefault">
+                                    Remember me </label></div>
+                                <a class="text-decoration-none forgot-text" data-bs-toggle="modal"
+                                   data-bs-target="#exampleModal">Forgot
+                                    password?</a>
+                            </div>
+                            <div class="signin-btn w-100 mt-2">
+                                <button class="btn btn-success btn-block" type="submit">Sign in</button>
+                            </div>
+
+                            <div class="signin-btn w-100 mt-2">
+                                <ul class="social-list">
+                                    <li><a style="text-decoration: none" href="#">
+                                        <box-icon class="bx-tada-hover" type='logo' name='facebook-square'></box-icon>
+                                    </a></li>
+                                    <li><a style="text-decoration: none" href="#">
+                                        <box-icon class="bx-tada-hover" type='logo'
+                                                  name='google-plus-circle'></box-icon>
+                                    </a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Forget Password</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="form-data"><label>Email</label><input type="email" class="form-control w-100"/>
+                    </div>
+                    <p id="notification" style="color: green"></p>
+                </div>
+                <div class="modal-footer">
+                    <button type="submit" class="btn btn-primary" onclick="myClickFunction()">Submit</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        let myModal = document.getElementById('myModal')
+        let myInput = document.getElementById('myInput')
+        myModal.addEventListener('shown.bs.modal', function () {
+            myInput.focus()
+        })
+
+        function myClickFunction() {
+            document.getElementById("notification").innerHTML = "Check your email we have sent a confirmation message";
+        }
+
+    </script>
+{% endblock %}

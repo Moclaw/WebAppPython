@@ -1,5 +1,11 @@
 {% extends "index.html" %}
-{% block title %}Huy Law Blog{% endblock %}
+
+{% block title %}
+<title>
+    Huy Law Blog
+</title>
+{% endblock %}
+
 {% block content %}
 <link rel="stylesheet" href="{{ url_for('static',filename='css/bootstrap.css') }}">
 <link rel="stylesheet" href="{{ url_for('static',filename='css/bootstrap.min.css') }}">
@@ -67,24 +73,6 @@
                             >
                                 Discord
                             </a>
-                            <!-- <a  class ="banner-button btn rounded-pill btn-outline-primary btn-lg px-4" 
-                                href  ="https://discord.gg/ZCg2yFFt6P"
-                                role  ="button"
-                                
-                            >
-                                <b>
-                                    FACEBOOK
-                                </b> 
-                            </a>
-                            <a  class ="banner-button btn rounded-pill btn-outline-primary btn-lg px-4" 
-                                href  ="https://discord.gg/ZCg2yFFt6P"
-                                role  ="button"
-                                
-                            >
-                                <b>
-                                    ZALO -->
-                                </b> 
-                            </a>
                         </div>
                     </div>
                 </div>
@@ -150,7 +138,7 @@
         </div>
         <div class="col-xl-3 col-md-4 col-sm-6 project datascience"> <!--webstiteDev-->
             <a href="#" class="service-work card border-0 text-white shadow-sm overflow-hidden mx-5 m-sm-0">
-                <img class="card-img" src="../static/img/AnhToan.jpg" alt="Card image">
+                <img class="card-img" src="../static/img/AnhToan.png" alt="Card image">
                 <div class="service-work-vertical card-img-overlay d-flex align-items-end">
                     <div class="service-work-content text-left text-light">
                         <span class="btn btn-outline-light rounded-pill mb-lg-3 px-lg-4 light-300">Đăng ký</span>
@@ -210,7 +198,7 @@
         </div>
         <div class="col-xl-3 col-md-4 col-sm-6 project datascience">
             <a href="#" class="service-work card border-0 text-white shadow-sm overflow-hidden mx-5 m-sm-0">
-                <img class="card-img" src="../static/img/AnhToan.jpg" alt="Card image">
+                <img class="card-img" src="../static/img/AnhToan.png" alt="Card image">
                 <div class="service-work-vertical card-img-overlay d-flex align-items-end">
                     <div class="service-work-content text-left text-light">
                         <span class="btn btn-outline-light rounded-pill mb-lg-3 px-lg-4 light-300">Đăng ký</span>
@@ -234,12 +222,12 @@
         </div>
         <div class="col-xl-3 col-md-4 col-sm-6 project datascience">
             <a href="#" class="service-work card border-0 text-white shadow-sm overflow-hidden mx-5 m-sm-0">
-                <img class="card-img" src="../static/img/AnhToan.jpg" alt="Card image">
+                <img class="card-img" src="../static/img/AnhToan.png" alt="Card image">
                 <div class="service-work-vertical card-img-overlay d-flex align-items-end">
                     <div class="service-work-content text-left text-light">
                         <span class="btn btn-outline-light rounded-pill mb-lg-3 px-lg-4 light-300">Đăng ký</span>
                         <p class="card-text">Khóa học 20 triệu.<br>
-                                             Nhận thức vĩ mô và thành thạo quản lý thống.</p>
+                                             Nhận thức vĩ mô và thành thạo quản lý hệ thống.</p>
                     </div>
                 </div>
             </a>
@@ -307,3 +295,141 @@
     </div>
 </section>
 {% endblock %}
+
+{% block footer %}
+<link rel="stylesheet" href="{{ url_for('static',filename='css/bootstrap.css') }}">
+<link rel="stylesheet" href="{{ url_for('static',filename='css/bootstrap.min.css') }}">
+<link rel="stylesheet" href="{{ url_for('static',filename='css/boxicon.min.css') }}">
+<link rel="stylesheet" href="{{ url_for('static',filename='css/main.css') }}">
+<footer class="bg-secondary pt-4">
+    <div class="container">
+        <div class="row py-4">
+
+            <div class="col-lg-3 col-12 align-left">
+                <a class="navbar-brand" href="{{ url_for('view.home_page') }}">
+                    <i class='bx bx-buildings bx-sm text-light'></i>
+                    <span class="text-light h5">Huy</span> <span class="text-light h5 semi-bold-600">Law</span>
+                </a>
+                <p class="text-light my-lg-4 my-2">
+                    Mạng xã hội
+                </p>
+                <ul class="list-inline footer-icons light-300">
+                    <li class="list-inline-item m-0">
+                        <a class="text-light" target="_blank" href="http://facebook.com/">
+                            <i class='bx bxl-facebook-square bx-md'></i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="col-lg-3 col-md-4 my-sm-0 mt-4">
+                <h3 class="h4 pb-lg-3 text-light light-300">Our Company</h2>
+                    <ul class="list-unstyled text-light light-300">
+                        <li class="pb-2">
+                            <i class='bx-fw bx bxs-chevron-right bx-xs'></i><a class="text-decoration-none text-light" href="{{ url_for('view.home_page') }}">Home</a>
+                        </li>
+                        <li class="pb-2">
+                            <i class='bx-fw bx bxs-chevron-right bx-xs'></i><a class="text-decoration-none text-light py-1" href="{{ url_for('view.about_page') }}">About Us</a>
+                        </li>
+                        <li class="pb-2">
+                            <i class='bx-fw bx bxs-chevron-right bx-xs'></i><a class="text-decoration-none text-light py-1" href="{{ url_for('view.work_page') }}">Work</a>
+                        </li>
+                        <li class="pb-2">
+                            <i class='bx-fw bx bxs-chevron-right bx-xs'></i></i><a class="text-decoration-none text-light py-1" href="{{ url_for('view.price_page') }}">Price</a>
+                        </li>
+                        <li class="pb-2">
+                            <i class='bx-fw bx bxs-chevron-right bx-xs'></i><a class="text-decoration-none text-light py-1" href="{{ url_for('view.contact_page') }}">Contact</a>
+                        </li>
+                    </ul>
+            </div>
+
+            <div class="col-lg-3 col-md-4 my-sm-0 mt-4">
+                <h2 class="h4 pb-lg-3 text-light light-300">Our Works</h2>
+                <ul class="list-unstyled text-light light-300">
+                    <li class="pb-2">
+                        <i class='bx-fw bx bxs-chevron-right bx-xs'></i><a class="text-decoration-none text-light py-1" href="#">Data</a>
+                    </li>
+                    <li class="pb-2">
+                        <i class='bx-fw bx bxs-chevron-right bx-xs'></i><a class="text-decoration-none text-light py-1" href="#">Social</a>
+                    </li>
+                    <li class="pb-2">
+                        <i class='bx-fw bx bxs-chevron-right bx-xs'></i><a class="text-decoration-none text-light py-1" href="#">Network</a>
+                    </li>
+                    <li class="pb-2">
+                        <i class='bx-fw bx bxs-chevron-right bx-xs'></i><a class="text-decoration-none text-light py-1" href="#">AI</a>
+                    </li>
+                    <li class="pb-2">
+                        <i class='bx-fw bx bxs-chevron-right bx-xs'></i><a class="text-decoration-none text-light py-1" href="#">Website</a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="col-lg-3 col-md-4 my-sm-0 mt-4">
+                <h2 class="h4 pb-lg-3 text-light light-300">Contact Us</h2>
+                <ul class="list-unstyled text-light light-300">
+                    <li class="pb-2">
+                        <i class='bx-fw bx bx-phone bx-xs'></i><a class="text-decoration-none text-light py-1" href="tel:010-020-0340">010-020-0340</a>
+                    </li>
+                    <li class="pb-2">
+                        <i class='bx-fw bx bx-mail-send bx-xs'></i><a class="text-decoration-none text-light py-1" href="mailto:huy.207ct40299@vanlanguni.vn">huy.207ct40299@vanlanguni.vn</a><br>
+                        <i class='bx-fw bx bx-mail-send bx-xs'></i><a class="text-decoration-none text-light py-1" href="mailto:cong.207ct27643@vanlanguni.vn">cong.207ct27643@vanlanguni.vn</a>
+                    </li>
+                </ul>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="w-100 bg-primary py-3">
+        <div class="container">
+            <div class="row pt-2">
+                <div class="col-lg-6 col-sm-12">
+                    <p class="text-lg-start text-center text-light light-300">
+                        © Copyright 2021 Nguyen Thanh Cong(Moclaw) & Do Huy. All Rights Reserved.
+                    </p>
+                </div>
+                <div class="col-lg-6 col-sm-12">
+                    <p class="text-lg-end text-center text-light light-300">
+                        Make by <a rel="sponsored" class="text-decoration-none text-light" href="#" target="_blank"><strong>Huy Law</strong></a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</footer>
+{% endblock %}
+
+
+{% block script %}
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+<script src="../static/js/bootstrap.bundle.min.js"></script>
+<script src="../static/js/jquery.min.js"></script>
+<script src="../static/js/isotope.pkgd.js"></script>
+<script src="../static/js/templatemo.js"></script>
+<script src="../static/js/custom.js"></script>
+<script>
+    $(window).load(function () {
+        // init Isotope
+        var $projects = $('.projects').isotope({
+            itemSelector: '.project',
+            layoutMode: 'fitRows'
+        });
+        $(".filter-btn").click(function () {
+            var data_filter = $(this).attr("data-filter");
+            let isotope = $projects.isotope({
+                filter: data_filter
+            });
+            $(".filter-btn").removeClass("active");
+            $(".filter-btn").removeClass("shadow");
+            $(this).addClass("active");
+            $(this).addClass("shadow");
+            return false;
+        });
+    });
+
+</script>
+{% endblock %}
+

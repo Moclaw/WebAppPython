@@ -3326,8 +3326,13 @@
  
  .btn-secondary {
      color: #000;
+<<<<<<< HEAD
      /* background-color: #6266ea;
      border-color: #6266ea; */
+=======
+     /* background-color: #C26C32;
+     border-color: #C26C32; */
+>>>>>>> dev
      background-color: #C26C32;
      border-color: #C26C32;
  }
@@ -3666,7 +3671,11 @@
  .btn-outline-primary:active,
  .btn-outline-primary:hover {
      color: #f6f9fe;
+<<<<<<< HEAD
      background-color: #EAA462;
+=======
+     background-color: #C26C32;
+>>>>>>> dev
      border-color: #EAA462
  }
  
@@ -7018,7 +7027,11 @@
  }
  
  .link-secondary {
+<<<<<<< HEAD
      color: #6266ea
+=======
+     color: #C26C32
+>>>>>>> dev
  }
  
  .link-secondary:focus,
