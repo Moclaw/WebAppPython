@@ -7,11 +7,6 @@ views = Blueprint('view', __name__)
 def home_page():
     return render_template('home.html')
 
-# @views.route('/login',methods=['GET','POST'])
-# def login_page():
-#     email = request.form['Email']
-#     password = request.form['Password']
-
 @views.route('/work')
 def work_page():
     return render_template('work.html')

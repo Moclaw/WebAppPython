@@ -163,6 +163,21 @@
     </style>
 {% endblock %}
 {% block login %}
+{% with messages = get_flashed_messages(with_categories=true) %} {% if
+    messages %} {% for category, message in messages %} {% if category ==
+    'error' %}
+        <div class="alert alert-danger alter-dismissable fade show" role="alert">
+            {{ message }}
+            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close">
+            </button>
+        </div>
+    {% else %}
+        <div class="alert alert-success alter-dismissable fade show" role="alert">
+            {{ message }}
+            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close">
+            </button>
+        </div>
+    {% endif %} {% endfor %} {% endif %} {% endwith %}
     <div class="container">
         <div class="row g-0 mt-5 mb-5 height-100">
             <div class="col-md-6">
@@ -179,7 +194,7 @@
             </div>
             <div class="col-md-6">
                 <div class="bg-white p-4 h-100">
-                    <form method="post">
+                    <form  method="post">
                         <div class="p-3 d-flex justify-content-center flex-column align-items-center"><span
                                 class="main-heading">Sign In To We Blog</span>
 

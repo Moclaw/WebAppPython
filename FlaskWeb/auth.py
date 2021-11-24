@@ -2,13 +2,25 @@ from flask import Blueprint, render_template, request, flash
 import re
 import sqlite3
 
-import flask
-
 auth = Blueprint('auth', __name__)
 
 
 @auth.route('/login', methods=['GET', 'POST'])
 def login_page():
+    if request.method == 'POST':
+        email = request.form.get('email')
+        password = request.form.get('password')
+        conn = sqlite3.connect('WebAppPython/account.db')
+        cur = conn.cursor()
+        check = conn.execute(f"SELECT * FROM user WHERE email = '{email}' AND password = '{password}' ")
+        
+        if check.fetchall():
+            flash('Login success !',category='success')
+        else:
+            flash('Login fail !',category='error')
+        print(check)
+        conn.commit()
+        conn.close()
     return render_template('login.html')
 
 @auth.route("/logout")
