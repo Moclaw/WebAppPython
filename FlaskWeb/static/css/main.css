@@ -1,5 +1,21 @@
-/*noinspection CssUnknownTarget*/
-@import url('https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.0/font/bootstrap-icons.css');
+/*
+
+TemplateMo 561 Purple Buzz
+
+https://templatemo.com/tm-561-purple-buzz
+
+---------------------------------------------
+Table of contents
+------------------------------------------------
+1. Typography
+2. Main Nav
+3. Home
+4. About
+5. Work
+6. Single Work
+7. Pricing
+8. Contact
+--------------------------------------------- */
 
 html {font-family: 'Open Sans', sans-serif;}
 /* Typography */
@@ -24,7 +40,7 @@ p, a {font-weight: 400;}
   width: 150px;
   display:block;
   position: absolute;
-  border-bottom:  5px solid #6266ea;
+  border-bottom:  5px solid #C26C32;
   padding-top: .5em;
 }
 .typo-space-line-center::after {
@@ -35,7 +51,9 @@ p, a {font-weight: 400;}
 #main_nav .nav-item .nav-link:hover {color: #fff;}
 /* Home */
 #index_banner {
-  background-image: url('../img/banner-bg-01.jpg');
+  /* background-image: url(../img/banner-bg-01.jpg); */
+  /* background-image: url(https://images.unsplash.com/photo-1518655048521-f130df041f66?ixid=MnwxMjA3fDB8MHxwcm9maWxlLXBhZ2V8Mnx8fGVufDB8fHx8&ixlib=rb-1.2.1&w=1000&q=80); */
+  background-image: url(../img/back.jfif);
   background-position: center center; background-size: cover;
   height: 100%;
   min-height: 60vh;
@@ -46,7 +64,8 @@ p, a {font-weight: 400;}
 }
 #index_banner .carousel-control-prev i,
 #index_banner .carousel-control-next i {
-  color: #6266ea !important;
+  /* color: #C26C32 !important; */
+  color: white !important;
   text-decoration: none;
   font-size: 4em;
 }
@@ -55,7 +74,7 @@ p, a {font-weight: 400;}
 }
 #index_banner .carousel-indicators li,
 #index_banner .carousel-indicators.active {
-  background-color: #6266ea !important;
+  background-color: #C26C32 !important;
 }
 .service-wrapper .service-footer {
   max-width: 720px;
@@ -106,10 +125,11 @@ p, a {font-weight: 400;}
 }
 /* About */
 #work_banner {
-  background-image: url('../img/banner-bg-02.jpg');
+  background-image: url(https://www.pixel4k.com/wp-content/uploads/2019/03/small-memory-4k_1551642806.jpg);
   background-position: center center; background-size: cover;
   height: 100%;
   width: 100%;
+  opacity: 0.9;
 }
 .progress {
   height: 8px;
@@ -174,4 +194,3 @@ footer a.text-light:hover {
   color: #bfbfbf !important;
   transition-duration: 0.15s;
 }
-

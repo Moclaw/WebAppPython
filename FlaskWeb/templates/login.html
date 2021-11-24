@@ -1,5 +1,5 @@
 {% extends 'index.html' %}
-{% block title %}Login{% endblock %}
+{% block title %}<title>Login</title>{% endblock %}
 {% block style_local %}
     {{ super() }}
     <style>
@@ -162,7 +162,7 @@
         }
     </style>
 {% endblock %}
-{% block content %}
+{% block login %}
     <div class="container">
         <div class="row g-0 mt-5 mb-5 height-100">
             <div class="col-md-6">
@@ -184,13 +184,12 @@
                                 class="main-heading">Sign In To We Blog</span>
 
 
-                            <div class="form-data"><label for="email">Email</label> <input type="text" id="email"
+                            <div class="form-data"><label for="email">Email</label> <input type="text"
                                                                                            name="email"
                                                                                            placeholder="Enter email"
                                                                                            class="form-control w-100"/>
                             </div>
                             <div class="form-data"><label for="password">Password</label> <input type="password"
-                                                                                                 id="password"
                                                                                                  name="password"
                                                                                                  placeholder="Enter password"
                                                                                                  class="form-control w-100"/>
@@ -206,11 +205,6 @@
                             </div>
                             <div class="signin-btn w-100 mt-2">
                                 <button class="btn btn-success btn-block" type="submit">Sign in</button>
-                            </div>
-                            <div class="signin-btn w-100 mt-2">
-                                <a href="../register">
-                                    <button class="btn btn-danger btn-block">Create New Account</button>
-                                </a>
                             </div>
 
                             <div class="signin-btn w-100 mt-2">
