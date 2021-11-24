@@ -8,7 +8,7 @@
 :root {
   --bs-blue: #0d6efd;
   --bs-indigo: #6610f2;
-  --bs-purple: #4232c2;
+  --bs-purple: #0D6EFD;
   --bs-pink: #d63384;
   --bs-red: #dc3545;
   --bs-orange: #fd7e14;
@@ -17,10 +17,10 @@
   --bs-teal: #20c997;
   --bs-cyan: #0dcaf0;
   --bs-white: #fff;
-  --bs-gray: #6c757d;
+  --bs-gray: #25AFF3;
   --bs-gray-dark: #343a40;
-  --bs-primary: #4232c2;
-  --bs-secondary: #6266ea;
+  --bs-primary: #0D6EFD;
+  --bs-secondary: #0D6EFD;
   --bs-success: #198754;
   --bs-info: #0dcaf0;
   --bs-warning: #ffc107;
@@ -245,7 +245,7 @@ sup {
 
 /* line 261, src/assets/scss/_reboot.scss */
 a {
-  color: #4232c2;
+  color: #0D6EFD;
   text-decoration: underline;
 }
 
@@ -336,7 +336,7 @@ table {
 caption {
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
-  color: #6c757d;
+  color: #25AFF3;
   text-align: left;
 }
 
@@ -675,7 +675,7 @@ progress {
   margin-top: -1rem;
   margin-bottom: 1rem;
   font-size: 0.875em;
-  color: #6c757d;
+  color: #25AFF3;
 }
 
 /* line 101, src/assets/scss/_type.scss */
@@ -713,7 +713,7 @@ progress {
 /* line 39, src/assets/scss/_images.scss */
 .figure-caption {
   font-size: 0.875em;
-  color: #6c757d;
+  color: #25AFF3;
 }
 
 /* line 7, src/assets/scss/_containers.scss */
@@ -2635,7 +2635,7 @@ progress {
 .form-text {
   margin-top: 0.25rem;
   font-size: 0.875em;
-  color: #6c757d;
+  color: #25AFF3;
 }
 
 /* line 5, src/assets/scss/forms/_form-control.scss */
@@ -2695,23 +2695,23 @@ progress {
 
 /* line 56, src/assets/scss/forms/_form-control.scss */
 .form-control::-webkit-input-placeholder {
-  color: #6c757d;
+  color: #25AFF3;
   opacity: 1;
 }
 .form-control::-moz-placeholder {
-  color: #6c757d;
+  color: #25AFF3;
   opacity: 1;
 }
 .form-control:-ms-input-placeholder {
-  color: #6c757d;
+  color: #25AFF3;
   opacity: 1;
 }
 .form-control::-ms-input-placeholder {
-  color: #6c757d;
+  color: #25AFF3;
   opacity: 1;
 }
 .form-control::placeholder {
-  color: #6c757d;
+  color: #25AFF3;
   opacity: 1;
 }
 
@@ -2902,7 +2902,7 @@ textarea.form-control-lg {
   font-weight: 400;
   line-height: 1.5;
   color: #212529;
-  vertical-align: middle;
+  /* vertical-align: middle; */
   background-color: #fff;
   background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3e%3cpath fill='none' stroke='%23343a40' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M2 5l6 6 6-6'/%3e%3c/svg%3e");
   background-repeat: no-repeat;
@@ -2931,7 +2931,7 @@ textarea.form-control-lg {
 
 /* line 43, src/assets/scss/forms/_form-select.scss */
 .form-select:disabled {
-  color: #6c757d;
+  color: #25AFF3;
   background-color: #e9ecef;
 }
 
@@ -3027,8 +3027,8 @@ textarea.form-control-lg {
 
 /* line 50, src/assets/scss/forms/_form-check.scss */
 .form-check-input:checked {
-  background-color: #4232c2;
-  border-color: #4232c2;
+  background-color: #0D6EFD;
+  border-color: #0D6EFD;
 }
 
 /* line 54, src/assets/scss/forms/_form-check.scss */
@@ -3043,8 +3043,8 @@ textarea.form-control-lg {
 
 /* line 71, src/assets/scss/forms/_form-check.scss */
 .form-check-input[type="checkbox"]:indeterminate {
-  background-color: #4232c2;
-  border-color: #4232c2;
+  background-color: #0D6EFD;
+  border-color: #0D6EFD;
   background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20'%3e%3cpath fill='none' stroke='%23fff' stroke-linecap='round' stroke-linejoin='round' stroke-width='3' d='M6 10h8'/%3e%3c/svg%3e");
 }
 
@@ -3144,7 +3144,7 @@ textarea.form-control-lg {
   width: 1rem;
   height: 1rem;
   margin-top: -0.25rem;
-  background-color: #4232c2;
+  background-color: #0D6EFD;
   border: 0;
   border-radius: 1rem;
   -webkit-transition: background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out;
@@ -3183,7 +3183,7 @@ textarea.form-control-lg {
 .form-range::-moz-range-thumb {
   width: 1rem;
   height: 1rem;
-  background-color: #4232c2;
+  background-color: #0D6EFD;
   border: 0;
   border-radius: 1rem;
   -moz-transition: background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
@@ -3693,8 +3693,8 @@ fieldset:disabled .btn {
 /* line 59, src/assets/scss/_buttons.scss */
 .btn-primary {
   color: #f6f9fe;
-  background-color: #4232c2;
-  border-color: #4232c2;
+  background-color: #0D6EFD;
+  border-color: #0D6EFD;
 }
 
 /* line 25, src/assets/scss/mixins/_buttons.scss */
@@ -3733,15 +3733,15 @@ fieldset:disabled .btn {
 /* line 65, src/assets/scss/mixins/_buttons.scss */
 .btn-primary:disabled, .btn-primary.disabled {
   color: #f6f9fe;
-  background-color: #4232c2;
-  border-color: #4232c2;
+  background-color: #0D6EFD;
+  border-color: #0D6EFD;
 }
 
 /* line 59, src/assets/scss/_buttons.scss */
 .btn-secondary {
   color: #000;
-  background-color: #6266ea;
-  border-color: #6266ea;
+  background-color: #0D6EFD;
+  border-color: #0D6EFD;
 }
 
 /* line 25, src/assets/scss/mixins/_buttons.scss */
@@ -3780,8 +3780,8 @@ fieldset:disabled .btn {
 /* line 65, src/assets/scss/mixins/_buttons.scss */
 .btn-secondary:disabled, .btn-secondary.disabled {
   color: #000;
-  background-color: #6266ea;
-  border-color: #6266ea;
+  background-color: #0D6EFD;
+  border-color: #0D6EFD;
 }
 
 /* line 59, src/assets/scss/_buttons.scss */
@@ -4068,55 +4068,59 @@ fieldset:disabled .btn {
 
 /* line 65, src/assets/scss/_buttons.scss */
 .btn-outline-primary {
-  color: #4232c2;
-  border-color: #4232c2;
+  /* color: #0D6EFD;
+  border-color: #0D6EFD; */
+  color: #0D6EFD;
+  border-color: #0D6EFD;
 }
 
 /* line 85, src/assets/scss/mixins/_buttons.scss */
 .btn-outline-primary:hover {
   color: #f6f9fe;
-  background-color: #4232c2;
-  border-color: #4232c2;
+  /* background-color: #0D6EFD;
+  border-color: #0D6EFD; */
+  background-color: #0D6EFD;
+  border-color: #0D6EFD;
 }
 
 /* line 91, src/assets/scss/mixins/_buttons.scss */
 .btn-check:focus + .btn-outline-primary, .btn-outline-primary:focus {
-  -webkit-box-shadow: 0 0 0 0.25rem rgba(66, 50, 194, 0.5);
-          box-shadow: 0 0 0 0.25rem rgba(66, 50, 194, 0.5);
+  -webkit-box-shadow: 0 0 0 0.25rem #0D6EFD;
+          box-shadow: 0 0 0 0.25rem #0D6EFD;
 }
 
 /* line 96, src/assets/scss/mixins/_buttons.scss */
 .btn-check:checked + .btn-outline-primary,
 .btn-check:active + .btn-outline-primary, .btn-outline-primary:active, .btn-outline-primary.active, .btn-outline-primary.dropdown-toggle.show {
   color: #f6f9fe;
-  background-color: #4232c2;
-  border-color: #4232c2;
+  background-color: #0D6EFD;
+  border-color: #0D6EFD;
 }
 
 /* line 105, src/assets/scss/mixins/_buttons.scss */
 .btn-check:checked + .btn-outline-primary:focus,
 .btn-check:active + .btn-outline-primary:focus, .btn-outline-primary:active:focus, .btn-outline-primary.active:focus, .btn-outline-primary.dropdown-toggle.show:focus {
-  -webkit-box-shadow: 0 0 0 0.25rem rgba(66, 50, 194, 0.5);
-          box-shadow: 0 0 0 0.25rem rgba(66, 50, 194, 0.5);
+  -webkit-box-shadow: 0 0 0 0.25rem #0D6EFD;
+          box-shadow: 0 0 0 0.25rem #0D6EFD;
 }
 
 /* line 115, src/assets/scss/mixins/_buttons.scss */
 .btn-outline-primary:disabled, .btn-outline-primary.disabled {
-  color: #4232c2;
+  color: #0D6EFD;
   background-color: transparent;
 }
 
 /* line 65, src/assets/scss/_buttons.scss */
 .btn-outline-secondary {
-  color: #6266ea;
-  border-color: #6266ea;
+  color: #0D6EFD;
+  border-color: #0D6EFD;
 }
 
 /* line 85, src/assets/scss/mixins/_buttons.scss */
 .btn-outline-secondary:hover {
   color: #000;
-  background-color: #6266ea;
-  border-color: #6266ea;
+  background-color: #0D6EFD;
+  border-color: #0D6EFD;
 }
 
 /* line 91, src/assets/scss/mixins/_buttons.scss */
@@ -4129,8 +4133,8 @@ fieldset:disabled .btn {
 .btn-check:checked + .btn-outline-secondary,
 .btn-check:active + .btn-outline-secondary, .btn-outline-secondary:active, .btn-outline-secondary.active, .btn-outline-secondary.dropdown-toggle.show {
   color: #000;
-  background-color: #6266ea;
-  border-color: #6266ea;
+  background-color: #0D6EFD;
+  border-color: #0D6EFD;
 }
 
 /* line 105, src/assets/scss/mixins/_buttons.scss */
@@ -4142,7 +4146,7 @@ fieldset:disabled .btn {
 
 /* line 115, src/assets/scss/mixins/_buttons.scss */
 .btn-outline-secondary:disabled, .btn-outline-secondary.disabled {
-  color: #6266ea;
+  color: #0D6EFD;
   background-color: transparent;
 }
 
@@ -4389,7 +4393,7 @@ fieldset:disabled .btn {
 /* line 76, src/assets/scss/_buttons.scss */
 .btn-link {
   font-weight: 400;
-  color: #4232c2;
+  color: #0D6EFD;
   text-decoration: underline;
 }
 
@@ -4400,7 +4404,7 @@ fieldset:disabled .btn {
 
 /* line 90, src/assets/scss/_buttons.scss */
 .btn-link:disabled, .btn-link.disabled {
-  color: #6c757d;
+  color: #25AFF3;
 }
 
 /* line 103, src/assets/scss/_buttons.scss */
@@ -4733,12 +4737,12 @@ fieldset:disabled .btn {
 .dropdown-item.active, .dropdown-item:active {
   color: #fff;
   text-decoration: none;
-  background-color: #4232c2;
+  background-color: #0D6EFD;
 }
 
 /* line 165, src/assets/scss/_dropdown.scss */
 .dropdown-item.disabled, .dropdown-item:disabled {
-  color: #6c757d;
+  color: #25AFF3;
   pointer-events: none;
   background-color: transparent;
 }
@@ -4754,7 +4758,7 @@ fieldset:disabled .btn {
   padding: 0.5rem 1rem;
   margin-bottom: 0;
   font-size: 0.875rem;
-  color: #6c757d;
+  color: #25AFF3;
   white-space: nowrap;
 }
 
@@ -4786,7 +4790,7 @@ fieldset:disabled .btn {
 /* line 212, src/assets/scss/_dropdown.scss */
 .dropdown-menu-dark .dropdown-item.active, .dropdown-menu-dark .dropdown-item:active {
   color: #fff;
-  background-color: #4232c2;
+  background-color: #0D6EFD;
 }
 
 /* line 218, src/assets/scss/_dropdown.scss */
@@ -4983,7 +4987,7 @@ fieldset:disabled .btn {
 
 /* line 30, src/assets/scss/_nav.scss */
 .nav-link.disabled {
-  color: #6c757d;
+  color: #25AFF3;
   pointer-events: none;
   cursor: default;
 }
@@ -5008,7 +5012,7 @@ fieldset:disabled .btn {
 
 /* line 54, src/assets/scss/_nav.scss */
 .nav-tabs .nav-link.disabled {
-  color: #6c757d;
+  color: #25AFF3;
   background-color: transparent;
   border-color: transparent;
 }
@@ -5037,7 +5041,7 @@ fieldset:disabled .btn {
 .nav-pills .nav-link.active,
 .nav-pills .show > .nav-link {
   color: #fff;
-  background-color: #4232c2;
+  background-color: #0D6EFD;
 }
 
 /* line 99, src/assets/scss/_nav.scss */
@@ -5918,13 +5922,13 @@ fieldset:disabled .btn {
 .breadcrumb-item + .breadcrumb-item::before {
   float: left;
   padding-right: 0.5rem;
-  color: #6c757d;
+  color: #25AFF3;
   content: var(--bs-breadcrumb-divider, "/") /* rtl: var(--bs-breadcrumb-divider, "/") */;
 }
 
 /* line 25, src/assets/scss/_breadcrumb.scss */
 .breadcrumb-item.active {
-  color: #6c757d;
+  color: #25AFF3;
 }
 
 /* line 1, src/assets/scss/_pagination.scss */
@@ -5940,7 +5944,7 @@ fieldset:disabled .btn {
 .page-link {
   position: relative;
   display: block;
-  color: #4232c2;
+  color: #0D6EFD;
   text-decoration: none;
   background-color: #fff;
   border: 1px solid #dee2e6;
@@ -5985,13 +5989,13 @@ fieldset:disabled .btn {
 .page-item.active .page-link {
   z-index: 3;
   color: #fff;
-  background-color: #4232c2;
-  border-color: #4232c2;
+  background-color: #0D6EFD;
+  border-color: #0D6EFD;
 }
 
 /* line 44, src/assets/scss/_pagination.scss */
 .page-item.disabled .page-link {
-  color: #6c757d;
+  color: #25AFF3;
   pointer-events: none;
   background-color: #fff;
   border-color: #dee2e6;
@@ -6244,7 +6248,7 @@ fieldset:disabled .btn {
   color: #fff;
   text-align: center;
   white-space: nowrap;
-  background-color: #4232c2;
+  background-color: #0D6EFD;
   -webkit-transition: width 0.6s ease;
   transition: width 0.6s ease;
 }
@@ -6336,7 +6340,7 @@ fieldset:disabled .btn {
 
 /* line 63, src/assets/scss/_list-group.scss */
 .list-group-item.disabled, .list-group-item:disabled {
-  color: #6c757d;
+  color: #25AFF3;
   pointer-events: none;
   background-color: #fff;
 }
@@ -6345,8 +6349,8 @@ fieldset:disabled .btn {
 .list-group-item.active {
   z-index: 2;
   color: #fff;
-  background-color: #4232c2;
-  border-color: #4232c2;
+  background-color: #0D6EFD;
+  border-color: #0D6EFD;
 }
 
 /* line 78, src/assets/scss/_list-group.scss */
@@ -6826,7 +6830,7 @@ fieldset:disabled .btn {
       -ms-flex-align: center;
           align-items: center;
   padding: 0.5rem 0.75rem;
-  color: #6c757d;
+  color: #25AFF3;
   background-color: rgba(255, 255, 255, 0.85);
   background-clip: padding-box;
   border-bottom: 1px solid rgba(0, 0, 0, 0.05);
@@ -7932,7 +7936,7 @@ fieldset:disabled .btn {
 
 /* line 2, src/assets/scss/helpers/_colored-links.scss */
 .link-primary {
-  color: #4232c2;
+  color: #0D6EFD;
 }
 
 /* line 6, src/assets/scss/helpers/_colored-links.scss */
@@ -7942,7 +7946,7 @@ fieldset:disabled .btn {
 
 /* line 2, src/assets/scss/helpers/_colored-links.scss */
 .link-secondary {
-  color: #6266ea;
+  color: #0D6EFD;
 }
 
 /* line 6, src/assets/scss/helpers/_colored-links.scss */
@@ -8452,12 +8456,12 @@ fieldset:disabled .btn {
 
 /* line 50, src/assets/scss/mixins/_utilities.scss */
 .border-primary {
-  border-color: #4232c2 !important;
+  border-color: #0D6EFD !important;
 }
 
 /* line 50, src/assets/scss/mixins/_utilities.scss */
 .border-secondary {
-  border-color: #6266ea !important;
+  border-color: #0D6EFD !important;
 }
 
 /* line 50, src/assets/scss/mixins/_utilities.scss */
@@ -9500,12 +9504,12 @@ fieldset:disabled .btn {
 
 /* line 50, src/assets/scss/mixins/_utilities.scss */
 .text-primary {
-  color: #4232c2 !important;
+  color: #0D6EFD !important;
 }
 
 /* line 50, src/assets/scss/mixins/_utilities.scss */
 .text-secondary {
-  color: #6266ea !important;
+  color: #0D6EFD !important;
 }
 
 /* line 50, src/assets/scss/mixins/_utilities.scss */
@@ -9550,7 +9554,7 @@ fieldset:disabled .btn {
 
 /* line 50, src/assets/scss/mixins/_utilities.scss */
 .text-muted {
-  color: #6c757d !important;
+  color: #25AFF3 !important;
 }
 
 /* line 50, src/assets/scss/mixins/_utilities.scss */
@@ -9590,12 +9594,12 @@ fieldset:disabled .btn {
 
 /* line 50, src/assets/scss/mixins/_utilities.scss */
 .bg-primary {
-  background-color: #4232c2 !important;
+  background-color: #0D6EFD !important;
 }
 
 /* line 50, src/assets/scss/mixins/_utilities.scss */
 .bg-secondary {
-  background-color: #6266ea !important;
+  background-color: #25AFF3 !important;
 }
 
 /* line 50, src/assets/scss/mixins/_utilities.scss */

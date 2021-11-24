@@ -2,12 +2,11 @@
 <html lang="en">
 
 <head>
-    <title>Purple Buzz - Contact Page</title>
+    <title>Huy Law Blog</title>
     <meta charset="utf-8">
+    <link rel="shortcut icon" type="image/x-icon" href="{{ url_for('static',filename='favicon.ico') }}">
+    <link rel="stylesheet" href="{{ url_for('static',filename='css/bootstrap.css') }}">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="apple-touch-icon" href="../static/img/apple-icon.png">
-    <link rel="shortcut icon" type="image/x-icon" href="../static/img/favicon.ico">
-    <!-- Load Require CSS -->
     <link href="../static/css/bootstrap.min.css" rel="stylesheet">
     <!-- Font CSS -->
     <link href="../static/css/boxicon.min.css" rel="stylesheet">
@@ -16,22 +15,17 @@
     <link rel="stylesheet" href="../static/css/main.css">
     <!-- Custom CSS -->
     <link rel="stylesheet" href="../static/css/custom.css">
-<!--
-    
-TemplateMo 561 Purple Buzz
 
-https://templatemo.com/tm-561-purple-buzz
-
--->
 </head>
 
 <body>
     <!-- Header -->
     <nav id="main_nav" class="navbar navbar-expand-lg navbar-light bg-white shadow">
         <div class="container d-flex justify-content-between align-items-center">
-            <a class="navbar-brand h1" href="index.html">
-                <i class='bx bx-buildings bx-sm text-dark'></i>
-                <span class="text-dark h4">Purple</span> <span class="text-primary h4">Buzz</span>
+            <a style="margin: 0;width: 200px;padding-right: 0;" class="navbar-brand h1" href="{{ url_for('view.contact_page') }}">
+                <span class="text-dark h4">
+                    <img src="../static/img/logo_ML_black.svg" style="width: 30%" alt="logo">&nbsp;
+                    Huy</span> <span class="text-primary h4">Law</span>
             </a>
             <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-toggler-success" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -41,19 +35,19 @@ https://templatemo.com/tm-561-purple-buzz
                 <div class="flex-fill mx-xl-5 mb-2">
                     <ul class="nav navbar-nav d-flex justify-content-between mx-xl-5 text-center text-dark">
                         <li class="nav-item">
-                            <a class="nav-link btn-outline-primary rounded-pill px-3" href="index.html">Home</a>
+                            <a class="nav-link btn-outline-primary rounded-pill px-3" href="{{ url_for('view.home_page') }}">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link btn-outline-primary rounded-pill px-3" href="about.html">About</a>
+                            <a class="nav-link btn-outline-primary rounded-pill px-3" href="{{ url_for('view.about_page') }}">About</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link btn-outline-primary rounded-pill px-3" href="work.html">Work</a>
+                            <a class="nav-link btn-outline-primary rounded-pill px-3" href="{{ url_for('view.work_page') }}">Work</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link btn-outline-primary rounded-pill px-3" href="pricing.html">Pricing</a>
+                            <a class="nav-link btn-outline-primary rounded-pill px-3" href="{{ url_for('view.price_page') }}">Price</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link btn-outline-primary rounded-pill px-3" href="contact.html">Contact</a>
+                            <a class="nav-link btn-outline-primary rounded-pill px-3" href="{{ url_for('view.contact_page') }}">Contact</a>
                         </li>
                     </ul>
                 </div>
@@ -73,12 +67,12 @@ https://templatemo.com/tm-561-purple-buzz
         <div class="container py-4">
             <div class="row align-items-center justify-content-between">
                 <div class="contact-header col-lg-4">
-                    <h1 class="h2 pb-3 text-primary">Contact</h1>
-                    <h3 class="h4 regular-400">Elit, sed do eiusmod tempor</h3>
+                    <h1 class="h2 pb-3 text-primary">Đăng Ký Khóa Học</h1>
+                    <!-- <h3 class="h4 regular-400"></h3>
                     <p class="light-300">
                         Vector illustration is from <a rel="nofollow" href="https://storyset.com/" target="_blank">StorySet</a>.
                         Incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida.
-                    </p>
+                    </p> -->
                 </div>
                 <div class="contact-img col-lg-5 align-items-end col-md-4">
                     <img src="../static/img/banner-img-01.svg">
@@ -92,13 +86,12 @@ https://templatemo.com/tm-561-purple-buzz
     <!-- Start Contact -->
     <section class="container py-5">
 
-        <h1 class="col-12 col-xl-8 h2 text-left text-primary pt-3">Create success campaign with us!</h1>
-        <h2 class="col-12 col-xl-8 h4 text-left regular-400">Elit, sed do eiusmod tempor </h2>
+        <h1 class="col-12 col-xl-8 h2 text-left text-primary pt-3">Học bổng hấp dẫn trong khóa đầu tiên.</h1>
+        <h2 class="col-12 col-xl-8 h4 text-left regular-400">Quyền lợi</h2>
         <p class="col-12 col-xl-8 text-left text-muted pb-5 light-300">
-            Incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices
-            gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis. Laboris
-            nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit
-            in voluptate.
+            Trong quá trình học sẽ diễn ra các cuộc thi, dành tặng cho các học viên đạt thành tích tốt.
+            Ngoài ra bạn cũng sẽ nhận được học bổng ngay sau khi hoàn thành dự án đầu tiên của mình.
+            <a href="{{ url_for('view.price_page') }}">Xem phần thưởng</a>
         </p>
 
         <div class="row pb-4">
@@ -111,9 +104,9 @@ https://templatemo.com/tm-561-purple-buzz
                         </div>
                     </div>
                     <ul class="contact-info list-unstyled col-lg-9 col-9  light-300">
-                        <li class="h5 mb-0">Media Contact</li>
-                        <li class="text-muted">Mr. John Doe</li>
-                        <li class="text-muted">010-020-0340</li>
+                        <li class="h5 mb-0">Ban truyền thông</li>
+                        <li class="text-muted">Chị Google</li>
+                        <li class="text-muted">010-020-XXXX</li>
                     </ul>
                 </div>
 
@@ -124,9 +117,9 @@ https://templatemo.com/tm-561-purple-buzz
                         </div>
                     </div>
                     <ul class="contact-info list-unstyled col-lg-9 col-9 light-300">
-                        <li class="h5 mb-0">Technical Contact</li>
-                        <li class="text-muted">Mr. John Stiles</li>
-                        <li class="text-muted">010-020-0340</li>
+                        <li class="h5 mb-0">Ban giải đáp</li>
+                        <li class="text-muted">Bạn Github</li>
+                        <li class="text-muted">010-XXX-0340</li>
                     </ul>
                 </div>
 
@@ -137,9 +130,9 @@ https://templatemo.com/tm-561-purple-buzz
                         </div>
                     </div>
                     <ul class="contact-info list-unstyled col-lg-9 col-9 light-300">
-                        <li class="h5 mb-0">Billing Contact</li>
-                        <li class="text-muted">Mr. Richard Miles</li>
-                        <li class="text-muted">010-020-0340</li>
+                        <li class="h5 mb-0">Ban tài vụ</li>
+                        <li class="text-muted">Chú StackOverFlow</li>
+                        <li class="text-muted">XXX-020-0340</li>
                     </ul>
                 </div>
 
@@ -152,48 +145,48 @@ https://templatemo.com/tm-561-purple-buzz
 
                     <div class="col-lg-6 mb-4">
                         <div class="form-floating">
-                            <input type="text" class="form-control form-control-lg light-300" id="floatingname" name="inputname" placeholder="Name">
-                            <label for="floatingname light-300">Name</label>
+                            <input type="text" class="form-control form-control-lg light-300" id="floatingname" name="inputname" placeholder="Họ Tên">
+                            <label for="floatingname light-300">Họ Tên</label>
                         </div>
                     </div><!-- End Input Name -->
 
                     <div class="col-lg-6 mb-4">
                         <div class="form-floating">
-                            <input type="text" class="form-control form-control-lg light-300" id="floatingemail" name="inputemail" placeholder="Email">
-                            <label for="floatingemail light-300">Email</label>
+                            <input type="text" class="form-control form-control-lg light-300" id="floatingemail" name="inputemail" placeholder="Tài khoản Email">
+                            <label for="floatingemail light-300">Tài khoản Email</label>
                         </div>
                     </div><!-- End Input Email -->
 
                     <div class="col-lg-6 mb-4">
                         <div class="form-floating">
-                            <input type="text" class="form-control form-control-lg light-300" id="floatingphone" name="inputphone" placeholder="Phone">
-                            <label for="floatingphone light-300">Phone</label>
+                            <input type="text" class="form-control form-control-lg light-300" id="floatingphone" name="inputphone" placeholder="Số điện thoại">
+                            <label for="floatingphone light-300">Số điện thoại</label>
                         </div>
                     </div><!-- End Input Phone -->
 
                     <div class="col-lg-6 mb-4">
                         <div class="form-floating">
-                            <input type="text" class="form-control form-control-lg light-300" id="floatingcompany" name="inputcompany" placeholder="Company Name">
-                            <label for="floatingcompany light-300">Company Name</label>
+                            <input type="text" class="form-control form-control-lg light-300" id="floatingcompany" name="inputcompany" placeholder="Địa chỉ">
+                            <label for="floatingcompany light-300">Địa chỉ</label>
                         </div>
                     </div><!-- End Input Company Name -->
 
                     <div class="col-12">
                         <div class="form-floating mb-4">
-                            <input type="text" class="form-control form-control-lg light-300" id="floatingsubject" name="inputsubject" placeholder="Subject">
-                            <label for="floatingsubject light-300">Subject</label>
+                            <input type="text" class="form-control form-control-lg light-300" id="floatingsubject" name="inputsubject" placeholder="Môn đăng ký">
+                            <label for="floatingsubject light-300">Môn đăng ký</label>
                         </div>
                     </div><!-- End Input Subject -->
 
                     <div class="col-12">
                         <div class="form-floating mb-3">
                             <textarea class="form-control light-300" rows="8" placeholder="Message" id="floatingtextarea"></textarea>
-                            <label for="floatingtextarea light-300">Message</label>
+                            <label for="floatingtextarea light-300">Ghi chú</label>
                         </div>
                     </div><!-- End Textarea Message -->
 
                     <div class="col-md-12 col-12 m-auto text-end">
-                        <button type="submit" class="btn btn-secondary rounded-pill px-md-5 px-4 py-2 radius-0 text-light light-300">Send Message</button>
+                        <button type="submit" class="btn btn-secondary rounded-pill px-md-5 px-4 py-2 radius-0 text-light light-300">Gửi</button>
                     </div>
 
                 </form>
@@ -212,13 +205,12 @@ https://templatemo.com/tm-561-purple-buzz
             <div class="row py-4">
 
                 <div class="col-lg-3 col-12 align-left">
-                    <a class="navbar-brand" href="index.html">
+                    <a class="navbar-brand" href="{{ url_for('view.work_page') }}">
                         <i class='bx bx-buildings bx-sm text-light'></i>
-                        <span class="text-light h5">Purple</span> <span class="text-light h5 semi-bold-600">Buzz</span>
+                        <span class="text-light h5">Huy</span> <span class="text-light h5 semi-bold-600">Law</span>
                     </a>
                     <p class="text-light my-lg-4 my-2">
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit,
-                        sed do eiusmod tempor incididunt ut.
+                        Mạng xã hội
                     </p>
                     <ul class="list-inline footer-icons light-300">
                         <li class="list-inline-item m-0">
@@ -226,7 +218,7 @@ https://templatemo.com/tm-561-purple-buzz
                                 <i class='bx bxl-facebook-square bx-md'></i>
                             </a>
                         </li>
-                        <li class="list-inline-item m-0">
+                        <!-- <li class="list-inline-item m-0">
                             <a class="text-light" target="_blank" href="https://www.linkedin.com/">
                                 <i class='bx bxl-linkedin-square bx-md'></i>
                             </a>
@@ -245,63 +237,61 @@ https://templatemo.com/tm-561-purple-buzz
                             <a class="text-light" target="_blank" href="https://www.medium.com/">
                                 <i class='bx bxl-medium-square bx-md' ></i>
                             </a>
-                        </li>
+                        </li> -->
                     </ul>
                 </div>
 
                 <div class="col-lg-3 col-md-4 my-sm-0 mt-4">
-                    <h3 class="h4 pb-lg-3 text-light light-300">Our Company</h2>
+                    <h3 class="h4 pb-lg-3 text-light light-300">Các Mục Chính</h2>
                         <ul class="list-unstyled text-light light-300">
                             <li class="pb-2">
-                                <i class='bx-fw bx bxs-chevron-right bx-xs'></i><a class="text-decoration-none text-light" href="index.html">Home</a>
+                                <i class='bx-fw bx bxs-chevron-right bx-xs'></i><a class="text-decoration-none text-light" href="{{ url_for('view.work_page') }}">Home</a>
                             </li>
                             <li class="pb-2">
-                                <i class='bx-fw bx bxs-chevron-right bx-xs'></i><a class="text-decoration-none text-light py-1" href="about.html">About Us</a>
+                                <i class='bx-fw bx bxs-chevron-right bx-xs'></i><a class="text-decoration-none text-light py-1" href="{{ url_for('view.about_page') }}">About Us</a>
                             </li>
                             <li class="pb-2">
-                                <i class='bx-fw bx bxs-chevron-right bx-xs'></i><a class="text-decoration-none text-light py-1" href="work.html">Work</a>
+                                <i class='bx-fw bx bxs-chevron-right bx-xs'></i><a class="text-decoration-none text-light py-1" href="{{ url_for('view.work_page') }}">Work</a>
                             </li>
                             <li class="pb-2">
-                                <i class='bx-fw bx bxs-chevron-right bx-xs'></i></i><a class="text-decoration-none text-light py-1" href="pricing.html">Price</a>
+                                <i class='bx-fw bx bxs-chevron-right bx-xs'></i></i><a class="text-decoration-none text-light py-1" href="{{ url_for('view.price_page') }}">Price</a>
                             </li>
                             <li class="pb-2">
-                                <i class='bx-fw bx bxs-chevron-right bx-xs'></i><a class="text-decoration-none text-light py-1" href="contact.html">Contact</a>
+                                <i class='bx-fw bx bxs-chevron-right bx-xs'></i><a class="text-decoration-none text-light py-1" href="{{ url_for('view.contact_page') }}">Contact</a>
                             </li>
                         </ul>
                 </div>
 
                 <div class="col-lg-3 col-md-4 my-sm-0 mt-4">
-                    <h2 class="h4 pb-lg-3 text-light light-300">Our Works</h2>
+                    <h2 class="h4 pb-lg-3 text-light light-300">Về Công Việc</h2>
                     <ul class="list-unstyled text-light light-300">
                         <li class="pb-2">
-                            <i class='bx-fw bx bxs-chevron-right bx-xs'></i><a class="text-decoration-none text-light py-1" href="#">Branding</a>
+                            <i class='bx-fw bx bxs-chevron-right bx-xs'></i><a class="text-decoration-none text-light py-1" href="#">Data</a>
                         </li>
                         <li class="pb-2">
-                            <i class='bx-fw bx bxs-chevron-right bx-xs'></i><a class="text-decoration-none text-light py-1" href="#">Business</a>
+                            <i class='bx-fw bx bxs-chevron-right bx-xs'></i><a class="text-decoration-none text-light py-1" href="#">Social</a>
                         </li>
                         <li class="pb-2">
-                            <i class='bx-fw bx bxs-chevron-right bx-xs'></i><a class="text-decoration-none text-light py-1" href="#">Marketing</a>
+                            <i class='bx-fw bx bxs-chevron-right bx-xs'></i><a class="text-decoration-none text-light py-1" href="#">Network</a>
                         </li>
                         <li class="pb-2">
-                            <i class='bx-fw bx bxs-chevron-right bx-xs'></i><a class="text-decoration-none text-light py-1" href="#">Social Media</a>
+                            <i class='bx-fw bx bxs-chevron-right bx-xs'></i><a class="text-decoration-none text-light py-1" href="#">AI</a>
                         </li>
                         <li class="pb-2">
-                            <i class='bx-fw bx bxs-chevron-right bx-xs'></i><a class="text-decoration-none text-light py-1" href="#">Digital Solution</a>
-                        </li>
-                        <li class="pb-2">
-                            <i class='bx-fw bx bxs-chevron-right bx-xs'></i><a class="text-decoration-none text-light py-1" href="#">Graphic</a>
+                            <i class='bx-fw bx bxs-chevron-right bx-xs'></i><a class="text-decoration-none text-light py-1" href="#">Website</a>
                         </li>
                     </ul>
                 </div>
 
                 <div class="col-lg-3 col-md-4 my-sm-0 mt-4">
-                    <h2 class="h4 pb-lg-3 text-light light-300">For Client</h2>
+                    <h2 class="h4 pb-lg-3 text-light light-300">Liên Lạc Qua</h2>
                     <ul class="list-unstyled text-light light-300">
                         <li class="pb-2">
-                            <i class='bx-fw bx bx-phone bx-xs'></i><a class="text-decoration-none text-light py-1" href="tel:010-020-0340">010-020-0340</a>
+                            <i class='bx-fw bx bx-phone bx-xs'></i><a class="text-decoration-none text-light py-1" href="tel:#">0963XXXXXX</a>
                         </li>
                         <li class="pb-2">
-                            <i class='bx-fw bx bx-mail-send bx-xs'></i><a class="text-decoration-none text-light py-1" href="mailto:info@company.com">info@company.com</a>
+                            <i class='bx-fw bx bx-mail-send bx-xs'></i><a class="text-decoration-none text-light py-1" href="mailto:huy.207ct40299@vanlanguni.vn">huy.207ct40299@vanlanguni.vn</a><br>
+                            <i class='bx-fw bx bx-mail-send bx-xs'></i><a class="text-decoration-none text-light py-1" href="mailto:cong.207ct27643@vanlanguni.vn">cong.207ct27643@vanlanguni.vn</a>
                         </li>
                     </ul>
                 </div>
@@ -314,12 +304,12 @@ https://templatemo.com/tm-561-purple-buzz
                 <div class="row pt-2">
                     <div class="col-lg-6 col-sm-12">
                         <p class="text-lg-start text-center text-light light-300">
-                            © Copyright 2021 Purple Buzz Company. All Rights Reserved.
+                            © Copyright 2021 Nguyen Thanh Cong(Moclaw) & Do Huy. All Rights Reserved.
                         </p>
                     </div>
                     <div class="col-lg-6 col-sm-12">
                         <p class="text-lg-end text-center text-light light-300">
-                            Designed by <a rel="sponsored" class="text-decoration-none text-light" href="https://templatemo.com/" target="_blank"><strong>TemplateMo</strong></a>
+                            Make by <a rel="sponsored" class="text-decoration-none text-light" href="#" target="_blank"><strong>Huy Law</strong></a>
                         </p>
                     </div>
                 </div>
